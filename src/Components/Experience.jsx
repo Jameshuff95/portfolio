@@ -57,7 +57,7 @@ function Experience({ isDark }) {
             <div id="timespan">
               <p>{`${experience.time1} - ${experience.time2}`}</p>
             </div>
-            <h5 id="position">{experience.position}</h5>
+            <h6 id="position">{experience.position}</h6>
           </div>
           <div className="exp_right">
             <ul id="description">
