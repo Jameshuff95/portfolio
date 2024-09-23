@@ -3,15 +3,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  border: 1px solid transparent;
   box-shadow: none;
-}
-
-#projects_inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  gap: 5px;
+  border: 1px solid red;
 }
 
 #projects_header {
@@ -19,6 +12,9 @@
   justify-content: space-around;
   align-items: center;
   height: 2.5rem;
+  margin: 1rem 0;
+  box-shadow: none;
+
   select {
     cursor: pointer;
   }
@@ -29,6 +25,13 @@
   padding: 2%;
   background-color: #fff;
   color: #333;
+}
+
+#projects_inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 5px;
 }
 
 .project_card {

@@ -15,7 +15,10 @@ function App() {
   }
 
   return (
-    <div id="main" className={` ${isDark ? 'dark-theme' : 'light-theme'}`}>
+    <div
+      id="main"
+      className={` ${isDark ? 'section dark-theme' : 'section light-theme'}`}
+    >
       <Hero isDark={isDark} handleToggleTheme={handleToggleTheme} />
       <About isDark={isDark} />
       <Projects isDark={isDark} />

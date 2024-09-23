@@ -28,6 +28,7 @@ html {
 body,
 #main {
   overflow-y: auto; /* Allow scrolling */
+  box-shadow: none;
 }
 
 #main {

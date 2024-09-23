@@ -4,7 +4,7 @@ import '../CSS/App.css';
 function Hero({ isDark, handleToggleTheme }) {
   return (
     <>
-      <div className="intro_container">
+      <div className="section intro_container">
         <i
           onClick={handleToggleTheme}
           className={`bi ${isDark ? 'bi-moon-fill' : 'bi-sun-fill'}`}

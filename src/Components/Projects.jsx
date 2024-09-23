@@ -104,7 +104,7 @@ function Projects({ isDark }) {
 
   return (
     <div
-      id="projects_container"
+      id="section projects_container"
       className={`${isDark ? 'dark-theme' : 'light-theme'}`}
     >
       <div id="projects_header">
