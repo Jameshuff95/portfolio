@@ -11,7 +11,7 @@ function Contact({ isDark }) {
       <form action="POST" id="contact_form">
         <input id="name" type="text" placeholder="Enter your name" />
         <input id="email" type="email" placeholder="Enter your email" />
-        <textarea id="message" type="text" placeholder="Send me a message!" />
+        <textarea id="message" type="text" placeholder="Enter your message" />
         <input type="submit" />
       </form>
     </div>

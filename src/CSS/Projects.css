@@ -26,12 +26,27 @@
 
 #project_filter {
   width: 50%;
+  padding: 2%;
+  background-color: #fff;
+  color: #333;
 }
 
 .project_card {
   padding: 0.5rem;
   width: 100%;
+  height: 100%;
   max-width: 300px;
+  background-color: #fff;
+  color: #333;
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 .project_image {
@@ -41,6 +56,8 @@
   margin: auto;
   cursor: pointer;
   background-color: #ccc;
+  border: 1px solid black;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 400px) {

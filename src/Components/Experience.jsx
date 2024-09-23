@@ -6,33 +6,33 @@ function Experience({ isDark }) {
     {
       id: 1,
       title: 'Experience 1',
-      duties: 'duty list 1',
-      time1: 'Time1 A',
-      time2: 'Time1 B',
+      duties: ['Duty 1', 'Duty 2', 'Duty 3', 'Duty 4', 'Duty 5'],
+      time1: '2015',
+      time2: '2016',
       position: 'Position A',
     },
     {
       id: 2,
       title: 'Experience 2',
-      duties: 'duty list 2',
-      time1: 'Time2 A',
-      time2: 'Time2 B',
+      duties: ['Duty 1', 'Duty 2', 'Duty 3', 'Duty 4', 'Duty 5'],
+      time1: '2016',
+      time2: '2018',
       position: 'Position B',
     },
     {
       id: 3,
       title: 'Experience 3',
-      duties: 'duty list 3',
-      time1: 'Time3 A',
-      time2: 'Time3 B',
+      duties: ['Duty 1', 'Duty 2', 'Duty 3', 'Duty 4', 'Duty 5'],
+      time1: '2019',
+      time2: '2020',
       position: 'Position C',
     },
     {
       id: 4,
       title: 'Experience 4',
-      duties: 'duty list 4',
-      time1: 'Time4 A',
-      time2: 'Time4 B',
+      duties: ['Duty 1', 'Duty 2', 'Duty 3', 'Duty 4', 'Duty 5'],
+      time1: '2020',
+      time2: '2022',
       position: 'Position D',
     },
   ];
@@ -53,11 +53,19 @@ function Experience({ isDark }) {
             isDark ? 'experience dark-theme' : 'experience light-theme'
           }`}
         >
-          <div id="timespan">
-            <p>{`${experience.time1} - ${experience.time2}`}</p>
+          <div className="exp_left">
+            <div id="timespan">
+              <p>{`${experience.time1} - ${experience.time2}`}</p>
+            </div>
+            <h5 id="position">{experience.position}</h5>
           </div>
-          <h5 id="position">{experience.position}</h5>
-          <p id="description">{experience.duties}</p>
+          <div className="exp_right">
+            <ul id="description">
+              {experience.duties.map((duty) => (
+                <li key={duty.index}>{duty}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       ))}
     </div>

@@ -6,59 +6,87 @@ function Projects({ isDark }) {
   const projects = [
     {
       id: 1,
-      title: 'One',
-      description: 'description 1',
+      title: 'React Project 1',
+      description: 'React Description 1',
       img: '#',
-      category: 'A',
+      category: 'react',
     },
     {
       id: 2,
-      title: 'Two',
-      description: 'description 2',
+      title: 'React Project 2',
+      description: 'React Description 2',
       img: '#',
-      category: 'B',
+      category: 'react',
     },
     {
       id: 3,
-      title: 'Three',
-      description: 'description 3',
+      title: 'React Project 3',
+      description: 'React Description 3',
       img: '#',
-      category: 'C',
+      category: 'react',
     },
     {
       id: 4,
-      title: 'Four',
-      description: 'description 4',
+      title: 'C++ Project 1',
+      description: 'C++ Description 1',
       img: '#',
-      category: 'C',
+      category: 'c++',
     },
     {
       id: 5,
-      title: 'Five',
-      description: 'description 5',
+      title: 'C++ Project 2',
+      description: 'C++ Description 2',
       img: '#',
-      category: 'B',
+      category: 'c++',
     },
     {
       id: 6,
-      title: 'Six',
-      description: 'description 6',
+      title: 'C++ Project 3',
+      description: 'C++ Description 3',
       img: '#',
-      category: 'C',
+      category: 'c++',
     },
     {
       id: 7,
-      title: 'Seven',
-      description: 'description 7',
+      title: 'SQL Project 1',
+      description: 'SQL Description 1',
       img: '#',
-      category: 'D',
+      category: 'sql',
     },
     {
       id: 8,
-      title: 'Eight',
-      description: 'description 8',
+      title: 'SQL Project 2',
+      description: 'SQL Description 2',
       img: '#',
-      category: 'A',
+      category: 'sql',
+    },
+    {
+      id: 9,
+      title: 'SQL Project 3',
+      description: 'SQL Description 3',
+      img: '#',
+      category: 'sql',
+    },
+    {
+      id: 10,
+      title: 'Python Project 1',
+      description: 'Python Description 1',
+      img: '#',
+      category: 'python',
+    },
+    {
+      id: 11,
+      title: 'Python Project 2',
+      description: 'Python Description 2',
+      img: '#',
+      category: 'python',
+    },
+    {
+      id: 12,
+      title: 'Python Project 3',
+      description: 'Python Description 3',
+      img: '#',
+      category: 'python',
     },
   ];
 
@@ -87,9 +115,10 @@ function Projects({ isDark }) {
           className={`${isDark ? 'dark-theme' : 'light-theme'}`}
         >
           <option>--All--</option>
-          <option value="A">Category 1</option>
-          <option value="B">Category 2</option>
-          <option value="C">Category 3</option>
+          <option value="react">React.js</option>
+          <option value="c++">C++</option>
+          <option value="sql">SQL / MariaDB</option>
+          <option value="python">Python</option>
         </select>
       </div>
       <div id="projects_inner">
