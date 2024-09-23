@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+  height: auto;
   gap: 10px;
   border: 1px solid transparent;
   box-shadow: none;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 35%;
 }
 
@@ -42,15 +42,15 @@
 }
 
 #timespan {
-  font-size: 0.6rem;
-}
-
-#position {
   font-size: 0.8rem;
 }
 
+#position {
+  font-size: 1.1rem;
+}
+
 #description {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 400px) {

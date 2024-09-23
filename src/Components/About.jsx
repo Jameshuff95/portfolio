@@ -1,5 +1,4 @@
 import '../CSS/App.css';
-import '../CSS/About.css';
 import Accordion from './Accordion';
 
 function About() {
