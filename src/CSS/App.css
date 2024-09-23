@@ -1,3 +1,5 @@
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
 * {
   box-sizing: border-box;
   font-family: 'Reddit Sans Condensed', sans-serif;

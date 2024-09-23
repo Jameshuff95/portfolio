@@ -6,7 +6,10 @@
 
 .intro_container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  border: 1px solid white;
 
   i {
     width: 10%;
@@ -24,7 +27,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 8rem;
   text-align: center;
 }
 
@@ -35,11 +37,13 @@
 #socials {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  border: 1px solid red;
 
   a {
-    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
+    font-size: 0.5rem;
   }
 
   #facebook {

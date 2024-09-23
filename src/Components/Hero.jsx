@@ -17,27 +17,26 @@ function Hero({ isDark, handleToggleTheme }) {
             <p>I build responsive and engaging digital learning web apps.</p>
           </div>
         </div>
-      </div>
+        <div id="socials">
+          <a href="">
+            <i id="facebook" className="bi bi-facebook" />
+          </a>
+          <a href="">
+            <i id="linkedin" className="bi bi-linkedin" />
+          </a>
 
-      <div id="socials">
-        <a href="">
-          <i id="facebook" className="bi bi-facebook" />
-        </a>
-        <a href="">
-          <i id="linkedin" className="bi bi-linkedin" />
-        </a>
+          <a href="">
+            <i id="x" className="bi bi-twitter-x" />
+          </a>
 
-        <a href="">
-          <i id="x" className="bi bi-twitter-x" />
-        </a>
+          <a href="">
+            <i id="instagram" className="bi bi-instagram" />
+          </a>
 
-        <a href="">
-          <i id="instagram" className="bi bi-instagram" />
-        </a>
-
-        <a href="" download>
-          <i id="download" className="bi bi-download" />
-        </a>
+          <a href="" download>
+            <i id="download" className="bi bi-download" />
+          </a>
+        </div>
       </div>
     </>
   );

@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  padding: 5%;
+  border: 1px solid transparent;
+  box-shadow: none;
 }
 
 #projects_inner {
@@ -35,7 +36,7 @@
 
 .project_image {
   height: 8rem;
-  width: 100%;
+  width: 75%;
   max-width: 300px;
   margin: auto;
   cursor: pointer;
@@ -51,6 +52,11 @@
   .project_card {
     width: 100%;
     margin: 0.5rem auto;
+  }
+
+  .project_image {
+    width: 100%;
+    height: 5rem;
   }
 
   #projects_inner {

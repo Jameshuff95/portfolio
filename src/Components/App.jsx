@@ -17,8 +17,8 @@ function App() {
   return (
     <div id="main" className={` ${isDark ? 'dark-theme' : 'light-theme'}`}>
       <Hero isDark={isDark} handleToggleTheme={handleToggleTheme} />
-      <Projects isDark={isDark} />
       <About isDark={isDark} />
+      <Projects isDark={isDark} />
       <Experience isDark={isDark} />
       <Contact isDark={isDark} />
     </div>
