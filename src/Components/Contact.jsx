@@ -7,7 +7,7 @@ function Contact({ isDark }) {
       id="form_container"
       className={`${isDark ? 'section dark-theme' : 'section light-theme'}`}
     >
-      <h2>Contact</h2>
+      <h4>Contact</h4>
       <form action="POST" id="contact_form">
         <input id="name" type="text" placeholder="Enter your name" />
         <input id="email" type="email" placeholder="Enter your email" />

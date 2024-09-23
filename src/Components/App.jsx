@@ -21,8 +21,8 @@ function App() {
       className={` ${isDark ? 'section dark-theme' : 'section light-theme'}`}
     >
       <Hero isDark={isDark} handleToggleTheme={handleToggleTheme} />
-      <About isDark={isDark} />
       <Skills isDark={isDark} />
+      <About isDark={isDark} />
       <Projects isDark={isDark} />
       <Experience isDark={isDark} />
       <Contact isDark={isDark} />

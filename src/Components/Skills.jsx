@@ -19,8 +19,7 @@ function Skills() {
     'Windows Powershell',
   ];
   return (
-    <>
-      <hr />
+    <div className="section">
       <h4 id="skills_title">Skills</h4>
       <ul id="skills_container">
         {skills.map((skill, index) => (
@@ -30,8 +29,7 @@ function Skills() {
           </li>
         ))}
       </ul>
-      <hr />
-    </>
+    </div>
   );
 }
 

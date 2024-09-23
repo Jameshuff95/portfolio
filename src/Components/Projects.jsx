@@ -107,8 +107,9 @@ function Projects({ isDark }) {
       id="section projects_container"
       className={`${isDark ? 'dark-theme' : 'light-theme'}`}
     >
+      <h4 id="projects_title">Projects</h4>
       <div id="projects_header">
-        <h4>Projects</h4>
+        <p>Filter By Type:</p>
         <select
           id="project_filter"
           onChange={filterOptions}
