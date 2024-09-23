@@ -10,8 +10,11 @@ function Accordian({ title, content, isDark }) {
   }
 
   return (
-    <div id="accordion" className={` ${isDark ? 'dark-theme' : 'light-theme'}`}>
-      <div className="title" onClick={handleIsClicked}>
+    <div id="accordion">
+      <div
+        onClick={handleIsClicked}
+        className={` ${isDark ? 'title dark-theme' : 'title light-theme'}`}
+      >
         <h4>{title}</h4>
         {isClicked && <i className="bi bi-chevron-down" />}
         {!isClicked && <i className="bi bi-chevron-up" />}

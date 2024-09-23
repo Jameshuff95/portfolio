@@ -10,46 +10,28 @@
   background-color: transparent;
 }
 
+html,
+body,
+#root,
+#main {
+  height: 100%; /* Ensure they take full height */
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
 html {
   overflow-y: hidden; /* Allow scrolling */
 }
 
-html,
-body {
-  height: 100%; /* Ensure they take full height */
-  width: 99dvw;
-  overflow-x: hidden;
-}
-
-body {
+body,
+#main {
   overflow-y: auto; /* Allow scrolling */
-}
-
-#root {
-  height: 100%;
-  overflow: hidden;
 }
 
 #main {
   padding: 2%;
-  height: 100%;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 10px;
-  overflow-y: scroll;
 }
-
-/*
-@media screen and (max-width: 400px) {
-  #test1 {
-    flex-direction: column;
-  }
-
-  #test2 {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-*/

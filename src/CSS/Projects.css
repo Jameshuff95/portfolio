@@ -1,11 +1,9 @@
 #projects_container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
-  margin: auto;
   padding: 5%;
-  gap: 1rem;
-  border: none;
 }
 
 #projects_inner {
@@ -18,7 +16,8 @@
 #projects_header {
   display: flex;
   justify-content: space-around;
-  padding: 1%;
+  align-items: center;
+  height: 2.5rem;
   select {
     cursor: pointer;
   }
