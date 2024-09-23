@@ -1,0 +1,23 @@
+#accordions_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion_item {
+  font-size: 0.6rem;
+  padding: 10px;
+}

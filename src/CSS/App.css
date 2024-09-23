@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Reddit Sans Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+html {
+  overflow-y: hidden; /* Allow scrolling */
+}
+
+html,
+body {
+  height: 100%; /* Ensure they take full height */
+  width: 99dvw;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: auto; /* Allow scrolling */
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+#main {
+  padding: 2%;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+/*
+@media screen and (max-width: 400px) {
+  #test1 {
+    flex-direction: column;
+  }
+
+  #test2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+*/
