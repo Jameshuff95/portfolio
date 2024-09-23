@@ -1,0 +1,14 @@
+#skills_title {
+  text-align: center;
+}
+
+#skills_container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  li {
+    margin: 0.25rem;
+  }
+}

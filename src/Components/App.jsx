@@ -6,6 +6,7 @@ import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
+import Skills from './Skills';
 
 function App() {
   const [isDark, setIsDark] = useState(true);
@@ -21,6 +22,7 @@ function App() {
     >
       <Hero isDark={isDark} handleToggleTheme={handleToggleTheme} />
       <About isDark={isDark} />
+      <Skills isDark={isDark} />
       <Projects isDark={isDark} />
       <Experience isDark={isDark} />
       <Contact isDark={isDark} />
