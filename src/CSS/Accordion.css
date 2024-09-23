@@ -21,4 +21,16 @@
 
 .accordion_item {
   padding: 10px;
+
+  img {
+    width: 45%;
+    height: 50%;
+    margin: auto 0.5rem;
+  }
+}
+
+#background_info {
+  display: flex;
+  border: 1px solid white;
+  gap: 1rem;
 }
