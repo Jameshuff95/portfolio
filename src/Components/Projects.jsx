@@ -136,7 +136,10 @@ function Projects({ isDark }) {
                   ? 'project_image dark-theme'
                   : 'project_image light-theme'
               }`}
-            />
+            >
+              <button className="project_button">Go To Repository</button>
+              <button className="project_button">Go to site</button>
+            </div>
             <h1>{project.title}</h1>
             <p>{project.description}</p>
           </div>

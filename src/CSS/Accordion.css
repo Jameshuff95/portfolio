@@ -24,6 +24,7 @@
 
   img {
     width: 35%;
+    max-width: 200px;
     margin: auto;
     border-radius: 2.5px;
   }
