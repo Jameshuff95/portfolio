@@ -35,6 +35,9 @@
 .exp_right {
   width: 65%;
   padding: 1%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
 
   ul {
     list-style-type: none;
