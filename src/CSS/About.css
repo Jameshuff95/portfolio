@@ -1,0 +1,11 @@
+#background_info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  padding: 1%;
+}
+
+#paragragh_container {
+  text-align: center;
+  padding: 1%;
+}
