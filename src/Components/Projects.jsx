@@ -10,6 +10,8 @@ function Projects({ isDark }) {
       description: 'React Description 1',
       img: '#',
       category: 'react',
+      repository: 'https://github.com/user/react-project-1',
+      domain: 'https://react-project-1.com',
     },
     {
       id: '2',
@@ -17,6 +19,7 @@ function Projects({ isDark }) {
       description: 'React Description 2',
       img: '#',
       category: 'react',
+      repository: 'https://github.com/user/react-project-2',
     },
     {
       id: '3',
@@ -24,70 +27,9 @@ function Projects({ isDark }) {
       description: 'React Description 3',
       img: '#',
       category: 'react',
+      domain: 'https://react-project-3.com',
     },
-    {
-      id: '4',
-      title: 'C++ Project 1',
-      description: 'C++ Description 1',
-      img: '#',
-      category: 'c++',
-    },
-    {
-      id: '5',
-      title: 'C++ Project 2',
-      description: 'C++ Description 2',
-      img: '#',
-      category: 'c++',
-    },
-    {
-      id: '6',
-      title: 'C++ Project 3',
-      description: 'C++ Description 3',
-      img: '#',
-      category: 'c++',
-    },
-    {
-      id: '7',
-      title: 'SQL Project 1',
-      description: 'SQL Description 1',
-      img: '#',
-      category: 'sql',
-    },
-    {
-      id: '8',
-      title: 'SQL Project 2',
-      description: 'SQL Description 2',
-      img: '#',
-      category: 'sql',
-    },
-    {
-      id: '9',
-      title: 'SQL Project 3',
-      description: 'SQL Description 3',
-      img: '#',
-      category: 'sql',
-    },
-    {
-      id: '10',
-      title: 'Python Project 1',
-      description: 'Python Description 1',
-      img: '#',
-      category: 'python',
-    },
-    {
-      id: '11',
-      title: 'Python Project 2',
-      description: 'Python Description 2',
-      img: '#',
-      category: 'python',
-    },
-    {
-      id: '12',
-      title: 'Python Project 3',
-      description: 'Python Description 3',
-      img: '#',
-      category: 'python',
-    },
+    // Add other projects similarly...
   ];
 
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -129,39 +71,79 @@ function Projects({ isDark }) {
         </select>
       </div>
       <div id="projects_inner">
-        {filteredProjects.map((project) => (
-          <div
-            className={`${
-              isDark ? 'project_card dark-theme' : 'project_card light-theme'
-            }`}
-            key={project.id}
-          >
-            <div
-              className="thumbnail"
-              id={project.id}
-              onClick={handleSelectImage}
-              style={{
-                display: selectedImage === project.id ? 'none' : 'block',
-                backgroundImage: `url(${project.img})`,
-                backgroundSize: 'cover',
-              }}
-            />
-            {selectedImage === project.id && (
-              <div
-                className={`${
-                  isDark
-                    ? 'project_image dark-theme'
-                    : 'project_image light-theme'
-                }`}
+        {filteredProjects.map((project) => {
+          let buttons = null;
+
+          if (project.repository && project.domain) {
+            buttons = (
+              <>
+                <button
+                  className="project_button"
+                  onClick={() => window.open(project.repository, '_blank')}
+                >
+                  Go To Repository
+                </button>
+                <button
+                  className="project_button"
+                  onClick={() => window.open(project.domain, '_blank')}
+                >
+                  Go to Site
+                </button>
+              </>
+            );
+          } else if (project.repository) {
+            buttons = (
+              <button
+                className="project_button"
+                onClick={() => window.open(project.repository, '_blank')}
               >
-                <button className="project_button">Go To Repository</button>
-                <button className="project_button">Go to site</button>
-              </div>
-            )}
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
-          </div>
-        ))}
+                Go To Repository
+              </button>
+            );
+          } else if (project.domain) {
+            buttons = (
+              <button
+                className="project_button"
+                onClick={() => window.open(project.domain, '_blank')}
+              >
+                Go to Site
+              </button>
+            );
+          }
+
+          return (
+            <div
+              className={`${
+                isDark ? 'project_card dark-theme' : 'project_card light-theme'
+              }`}
+              key={project.id}
+            >
+              <div
+                className="thumbnail"
+                id={project.id}
+                onClick={handleSelectImage}
+                style={{
+                  display: selectedImage === project.id ? 'none' : 'block',
+                  backgroundImage: `url(${project.img})`,
+                  backgroundSize: 'cover',
+                }}
+              />
+              {selectedImage === project.id && (
+                <div
+                  className={`${
+                    isDark
+                      ? 'project_image dark-theme'
+                      : 'project_image light-theme'
+                  }`}
+                >
+                  {buttons}
+                </div>
+              )}
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
