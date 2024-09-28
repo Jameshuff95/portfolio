@@ -49,7 +49,7 @@ function Experience({ isDark }) {
           : 'section experience_container light-theme'
       }`}
     >
-      <h4>Experience</h4>
+      <h2>Experience</h2>
       {experiences.map((experience) => (
         <div
           key={experience.id}

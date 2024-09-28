@@ -31,10 +31,6 @@
   h1 {
     font-size: 1.4rem;
   }
-
-  h3 {
-    font-size: 1rem;
-  }
 }
 
 .introText2 {
@@ -53,8 +49,8 @@
     text-decoration: none;
   }
 
-  #facebook {
-    color: #1877f2;
+  #github {
+    color: #6e5494;
   }
 
   #linkedin {
@@ -65,7 +61,7 @@
     color: #1da1f2;
   }
 
-  #instagram {
+  #download {
     background: linear-gradient(
       45deg,
       #405de6,
@@ -84,10 +80,6 @@
     -webkit-text-fill-color: transparent;
     color: transparent; /* Fallback for browsers that don't support background-clip */
     display: inline-block;
-  }
-
-  #download {
-    color: #445599;
   }
 }
 

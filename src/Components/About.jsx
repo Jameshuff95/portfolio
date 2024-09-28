@@ -6,7 +6,7 @@ import Accordion from './Accordion';
 function About() {
   return (
     <div id="section accordions_container">
-      <h4>Learn More About Me</h4>
+      <h2>Learn More About Me</h2>
       <Accordion
         title="Background"
         content={

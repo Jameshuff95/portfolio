@@ -19,18 +19,10 @@ function Hero({ isDark, handleToggleTheme }) {
         </div>
         <div id="socials">
           <a href="">
-            <i id="facebook" className="bi bi-facebook" />
+            <i id="github" className="bi bi-github" />
           </a>
           <a href="">
             <i id="linkedin" className="bi bi-linkedin" />
-          </a>
-
-          <a href="">
-            <i id="x" className="bi bi-twitter-x" />
-          </a>
-
-          <a href="">
-            <i id="instagram" className="bi bi-instagram" />
           </a>
 
           <a href="" download>

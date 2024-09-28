@@ -25,7 +25,8 @@
 
 #project_filter {
   width: 50%;
-  max-height: 2rem;
+  height: 2rem;
+  max-height: 50px;
   background-color: #fff;
   color: #333;
 }

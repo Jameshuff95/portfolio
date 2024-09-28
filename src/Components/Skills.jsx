@@ -51,11 +51,11 @@ function Skills() {
 
   return (
     <div className="section">
-      <h4>Skills</h4>
+      <h2>Skills</h2>
       <div id="skills_container">
         <i className="bi bi-chevron-left" id="left" onClick={handleIsClicked} />
         <div className="skill">
-          <h4 id="skills_title">{skillTitles[skillTitleIndex]}</h4>
+          <h2 id="skills_title">{skillTitles[skillTitleIndex]}</h2>
           <ul id="languages">
             {skills[skillIndex].map((skill, index) => (
               <li key={index}>
