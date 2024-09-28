@@ -9,7 +9,7 @@ function Experience({ isDark }) {
       duties: [
         'Developed a personal portfolio website using React.js, showcasing my skills and projects.',
         'Created a task management app with JavaScript, HTML, and CSS, implementing CRUD operations.',
-        'Built a weather forecasting app using Python and integrated it with a third-party API.',
+        'Built a weather forecasting app using React.js and integrated it with a third-party API.',
       ],
       time1: '2021',
       time2: 'Present',
@@ -21,7 +21,6 @@ function Experience({ isDark }) {
       duties: [
         'Designed and implemented a database management system using SQL for a college project.',
         'Developed a simple game using C++ as part of a coursework assignment.',
-        'Collaborated on a team project to create a web application using Java and Spring Boot.',
       ],
       time1: '2019',
       time2: '2023',
