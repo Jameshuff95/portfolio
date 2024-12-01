@@ -15,7 +15,7 @@ function Accordian({ title, content, isDark }) {
         onClick={handleIsClicked}
         className={` ${isDark ? 'title dark-theme' : 'title light-theme'}`}
       >
-        <h2>{title}</h2>
+        <p>{title}</p>
         {isClicked && <i className="bi bi-chevron-down" />}
         {!isClicked && <i className="bi bi-chevron-up" />}
       </div>

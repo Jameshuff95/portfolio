@@ -41,7 +41,7 @@ function Experience({ isDark }) {
   ];
 
   return (
-    <div
+    <section
       className={`${
         isDark
           ? 'section experience_container dark-theme'
@@ -49,8 +49,9 @@ function Experience({ isDark }) {
       }`}
     >
       <h2>Experience</h2>
+
       {experiences.map((experience) => (
-        <div
+        <article
           key={experience.id}
           className={`${
             isDark ? 'experience dark-theme' : 'experience light-theme'
@@ -62,6 +63,7 @@ function Experience({ isDark }) {
             </div>
             <h6 id="position">{experience.position}</h6>
           </div>
+
           <div className="exp_right">
             <ul id="description">
               {experience.duties.map((duty, index) => (
@@ -69,9 +71,9 @@ function Experience({ isDark }) {
               ))}
             </ul>
           </div>
-        </div>
+        </article>
       ))}
-    </div>
+    </section>
   );
 }
 

@@ -1,3 +1,5 @@
+/*
+
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 * {
@@ -16,18 +18,18 @@ html,
 body,
 #root,
 #main {
-  height: 100%; /* Ensure they take full height */
+  height: 100%;  /*Ensure they take full height 
   width: 100dvw;
   overflow-x: hidden;
 }
 
 html {
-  overflow-y: hidden; /* Allow scrolling */
+  overflow-y: hidden; /* Allow scrolling 
 }
 
 body,
 #main {
-  overflow-y: auto; /* Allow scrolling */
+  overflow-y: auto; /* Allow scrolling 
   box-shadow: none;
 }
 
@@ -42,3 +44,4 @@ body,
 h2 {
   text-align: center;
 }
+*/
